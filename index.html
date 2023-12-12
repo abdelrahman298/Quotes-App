@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Quote App</title>
+    <link rel="shortcut icon" href="favicon.icon" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <div
+      class="w-75 mx-auto d-flex flex-column justify-content-center align-items-center text-center mt-5"
+    >
+      <div class="container">
+        <div class="row">
+          <h1 class="display-3 fw-bolder">Quote of the Day</h1>
+          <p class="fs-4 fw-bold">
+            Press the button below to receive a random quote!
+          </p>
+          <button
+            type="button"
+            class="btn btn-primary btn-lg w-auto mx-auto p-3"
+            onclick="changeQuote()"
+          >
+            New Quote
+          </button>
+          <div class="mt-5 display-6 lead fw-bold" id="quoteContainer">
+            <p id="quoteParag"></p>
+            <p id="quoteArtist"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
